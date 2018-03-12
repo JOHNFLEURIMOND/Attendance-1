@@ -74,6 +74,11 @@ body {
   height: 900px;
 }
 
+h1, h3, form {
+  left: 20em;
+  text-align: center;
+}
+
 h2, ol li {
   position: relative;
   font-size: 1em;

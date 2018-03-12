@@ -9,7 +9,7 @@ MongoClient.connect('***REMOVED***o-do', (err, database) => {
   if (err) return console.log(err)
   db = database
   app.listen(process.env.PORT || 3000, () => {
-    console.log('listening on 3000')
+    console.log('What it look like?')
   })
 })
 
@@ -43,7 +43,7 @@ app.post('/messages', (req, res) => {
 })
 
 app.put('/thumbUp', (req, res) => {
-  db.collection('messages')
+  db.collection('enter')
     .findOneAndUpdate({
       name: req.body.name,
       msg: req.body.msg
