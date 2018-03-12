@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TO-Do List</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+  <div class="content">
+    <h1>2018</h1>
+    <h2>Who Is Here Today!</h2>
+
+    <h3>List</h3>
+    <ul class="messages">
+      <% for(var i=0; i<messages.length; i++) {%>
+        <li class="message">
+          <span><%= messages[i].name %></span>
+          <span><%= messages[i].msg %></span>
+          <span><%= messages[i].thumbUp %></span>
+          <span><%= messages[i].thumbDown %></span>
+          <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+          <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+          <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+        </li>
+        <% } %>
+    </ul>
+
+    <h2>Add Your Tasks</h2>
+
+    <form action="/messages" method="POST">
+      <input type="text" placeholder="name" name="name">
+      <input type="text" placeholder="message" name="msg">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

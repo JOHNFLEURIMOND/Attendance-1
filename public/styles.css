@@ -1,0 +1,141 @@
+/*
+Project Name:
+Client: Leon Noel
+Author: John Fleurimond
+Developer from Resilient Coders. Can't Stop. Won't stop
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
+}
+
+/* Clear fix hack */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.4;
+  font-weight: bolder;
+  font-family: 'Comfortaa', cursive;
+  background-color: #10104c;
+  background-image: url("../img/milky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+#container {
+  width: 100%;
+  height: 900px;
+}
+
+h2, ol li {
+  position: relative;
+  font-size: 1em;
+  padding: .2em .7em;
+  top: 2em;
+  left: 34em;
+}
+
+#present, #tardy, #all, #enter {
+  text-align: center;
+  background-color: #283059;
+  border-radius: .35em;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 1em;
+  padding: .5em 1em;
+  top: 2em;
+  left: 17em;
+  position: relative;
+}
+
+#present:hover, #tardy:hover, #all:hover, #enter:hover {
+  color: white;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+button {
+  background: #F5FCFF;
+  color: #284E77;
+}
+
+input {
+  background-color: #F5FCFF;
+  color: #284E77;
+}
+
+input:hover {
+  background-color: #284E77;
+  color: #F5FCFF;
+}
+
+button:hover {
+  background-color: #284E77;
+  color: w;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+/* #container {
+  width: 960px;
+  margin: auto;
+  background-image: url("../img/suwoo.png");
+} */
+
+h3 {
+  margin-top: 40px;
+}
