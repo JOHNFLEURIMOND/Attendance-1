@@ -96,16 +96,25 @@ button {
   padding: .5em 1em;
   top: 1.7em;
   position: relative;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+span:hover {
+  background-color: #284E77;
+  color: #F5FCFF;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 input {
   background-color: #F5FCFF;
   color: #284E77;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 input:hover {
   background-color: #284E77;
   color: #F5FCFF;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 button:hover {

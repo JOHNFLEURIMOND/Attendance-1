@@ -61,7 +61,9 @@
 // });
 
 
+
 var trash = document.getElementsByClassName("fa-trash");
+
 
 Array.from(trash).forEach(function(element) {
   element.addEventListener('click', function() {
