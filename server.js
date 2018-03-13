@@ -5,7 +5,7 @@ const MongoClient = require('mongodb').MongoClient
 
 var db
 
-MongoClient.connect('mongodb://godsplan:MiltonMass2018@ds039195.mlab.com:39195/to-do', (err, database) => {
+MongoClient.connect('mongodb://godsplan:MiltonMass2018@ds039195.mlab.com:39195/attendance', (err, database) => {
   if (err) return console.log(err)
   db = database
   app.listen(process.env.PORT || 3000, () => {
@@ -42,6 +42,27 @@ app.post('/messages', (req, res) => {
   })
 })
 
+
+
+app.put('/thumbDown', (req, res) => {
+  db.collection('attendance')
+    .findOneAndUpdate({
+      name: req.body.name,
+      msg: req.body.msg
+    }, {
+      $set: {
+        thumbDown: req.body.thumbDown + 1
+      }
+    }, {
+      sort: {
+        _id: -1
+      },
+      upsert: true
+    }, (err, result) => {
+      if (err) return res.send(err)
+      res.send(result)
+    })
+})
 
 app.delete('/messages', (req, res) => {
   db.collection('attendance').findOneAndDelete({
