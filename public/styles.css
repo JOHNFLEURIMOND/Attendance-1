@@ -74,7 +74,7 @@ body {
   height: 900px;
 }
 
-h1, h3, h2, ol li, form {
+h1, h3, h2, ul li, form {
   position: relative;
   font-size: 1em;
   padding: .2em .7em;
@@ -94,7 +94,7 @@ button {
   font-weight: 700;
   font-size: 1em;
   padding: .5em 1em;
-  top: 2em;
+  top: 1.7em;
   position: relative;
 }
 
