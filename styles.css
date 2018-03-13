@@ -87,7 +87,7 @@ h2, ol li {
   left: 34em;
 }
 
-#present, #tardy, #all, #enter {
+button {
   text-align: center;
   background-color: #283059;
   border-radius: .35em;
@@ -98,10 +98,6 @@ h2, ol li {
   top: 2em;
   left: 17em;
   position: relative;
-}
-
-#present:hover, #tardy:hover, #all:hover, #enter:hover {
-  color: white;
 }
 
 /******************************************
