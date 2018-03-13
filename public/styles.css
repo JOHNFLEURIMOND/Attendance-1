@@ -74,7 +74,7 @@ body {
   height: 900px;
 }
 
-h1, h3, h2, ol li {
+h1, h3, h2, ol li, form {
   position: relative;
   font-size: 1em;
   padding: .2em .7em;
