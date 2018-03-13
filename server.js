@@ -5,14 +5,13 @@ const MongoClient = require('mongodb').MongoClient
 
 var db
 
-MongoClient.connect('mongodb://godsplan:MiltonMass2018@ds039195.mlab.com:39195/attendance', (err, database) => {
+MongoClient.connect('mongodb://godsplan:MiltonMass2018@ds039195.mlab.com:39195/to-do', (err, database) => {
   if (err) return console.log(err)
   db = database
   app.listen(process.env.PORT || 3000, () => {
     console.log('What It Look Like?!')
   })
 })
-
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({
   extended: true
@@ -64,7 +63,7 @@ app.put('/thumbDown', (req, res) => {
     })
 })
 
-app.delete('/messages', (req, res) => {
+app.delete('/', (req, res) => {
   db.collection('attendance').findOneAndDelete({
     name: req.body.name,
     msg: req.body.msg
