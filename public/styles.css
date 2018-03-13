@@ -56,7 +56,7 @@ body {
   font-size: 1.2em;
   line-height: 1.4;
   font-weight: bolder;
-  font-family: 'Comfortaa', cursive;
+  font-family: Times, Georgia, serif;
   background-color: #10104c;
   background-image: url("../img/milky.jpg");
   background-repeat: no-repeat;
@@ -95,7 +95,6 @@ button {
   font-size: 1em;
   padding: .5em 1em;
   top: 2em;
-  left: 17em;
   position: relative;
 }
 
