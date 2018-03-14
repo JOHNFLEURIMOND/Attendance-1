@@ -59,7 +59,15 @@
 //   $("#all").on("click", allList);
 //
 // });
+function substitute() {
+  var myValue = document.getElementById('myTextBox').value;
 
+  if (myValue.length === 0) {
+    alert('Please enter a real value in the text box!!!');
+    return;
+  }
+
+}
 
 
 var trash = document.getElementsByClassName("fa-trash");
